@@ -10,7 +10,8 @@
     "lint:watch": "npm run lint -- --watch",
     "security-check": "nsp check",
     "localtunnel": "lt --port 3000",
-    "share": "npm-run-all --parallel open:src localtunnel"
+    "share": "npm-run-all --parallel open:src localtunnel",
+    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\""
   },
   "author": "",
   "license": "MIT",
