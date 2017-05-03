@@ -45,7 +45,9 @@ export default {
             minifyCSS: true,
             minifyURLs: true
           },
-          inject: true
+          inject: true,
+          // Properties defined here will be available in index.html
+          trackJSToken: 'someToken'
       }),
 
       // Eliminate deplicate packages
