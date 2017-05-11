@@ -1,5 +1,5 @@
 export default function getBaseUrl() {
-  return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : '/';
+  return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : 'https://sheltered-dusk-78773.herokuapp.com/';
 }
 
 function getQueryStringParameterByName(name, url) {
@@ -9,5 +9,5 @@ function getQueryStringParameterByName(name, url) {
       results = regex.exec(url);
   if (!results) return null;
   if (!results[2]) return '';
-  return decodeURIComponent(results[2].replace(/\+/g, "")); 
+  return decodeURIComponent(results[2].replace(/\+/g, ""));
 }
